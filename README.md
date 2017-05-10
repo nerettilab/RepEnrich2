@@ -1,24 +1,24 @@
 #RepEnrich2
-## Tutorial By Nicholas Skvir
-Email: [nicholas_skvir@brown.edu](mailto:nicholas_skvir@brown.edu)
+## Tutorial By Nicholas Skvir  
+Email: [nicholas_skvir@brown.edu](mailto:nicholas_skvir@brown.edu)  
 
 ### Dependencies
 This example is for mouse genome **mm9**. Before getting started you should make sure you have installed the dependencies
-for RepEnrich2. 
+for RepEnrich2.  
 
-RepEnrich2 currently requires:
-[Python](https://www.python.org/downloads/) version 2.7+,
-[Bowtie 2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml),
-[Bedtools](https://bedtools.readthedocs.io/en/latest/content/installation.html), 
-[Samtools](http://www.htslib.org/),
-[BioPython](http://biopython.org)
+RepEnrich2 currently requires:  
+[Python](https://www.python.org/downloads/) version 2.7+,  
+[Bowtie 2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml),  
+[Bedtools](https://bedtools.readthedocs.io/en/latest/content/installation.html),  
+[Samtools](http://www.htslib.org/),  
+[BioPython](http://biopython.org)  
 BioPython is used by the python scripts, and can be installed with the following command:
 
     pip install BioPython
 
-Currently I am using Python version 2.7.12+, Bedtools version 2.25.0, Bowtie2 version 2.2.9, Samtools version 1.3.1, and BioPython version 1.66-py2.7.
+Currently I am using Python version 2.7.12+, Bedtools version 2.25.0, Bowtie2 version 2.2.9, Samtools version 1.3.1, and BioPython version 1.66-py2.7.  
 
-Lastly, RepEnrich2 requires a Bowtie2 indexed genome in fasta format available. (Example `mm9.fa`) 
+Lastly, RepEnrich2 requires a Bowtie2 indexed genome in fasta format available. (Example `mm9.fa`)  
 
 
 ### Step 1) Attain repetitive element annotation
