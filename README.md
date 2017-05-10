@@ -126,9 +126,11 @@ Lastly, the RepEnrich2_subset.py script should be run to output discrete files f
 
 An explanation of the RepEnrich2_subset.py commands:
 * `<bamfile_to_subset>` -- path to the bamfile generated in the previous step
-* `30` -- the mapq value on which to subset uniquely mapping reads from multi-mapping reads
+* `30` -- the mapq value on which to subset uniquely mapping reads from multi-mapping reads; 30 is recommended for bowtie2
 * `<sample_name>` -- a prefix for the output files
 * `--pairedend TRUE` -- specifies whether the data is paired end, default is FALSE if unspecified
+
+
 
 The script should output a .bam file of uniquely mapping reads and .fastq file(s) of multimapping reads (sample_name_unique.bam, sample_name_multimap_R1.fastq, sample_name_multimap_R2.fastq for example).
 
