@@ -12,6 +12,7 @@ RepEnrich2 currently requires:
 [Bedtools](https://bedtools.readthedocs.io/en/latest/content/installation.html),  
 [Samtools](http://www.htslib.org/),  
 [BioPython](http://biopython.org)  
+
 BioPython is used by the python scripts, and can be installed with the following command:
 
     pip install BioPython
