@@ -156,11 +156,11 @@ An explanation of the RepEnrich2 commands:
 		<output_prefix>
 		<RepEnrich2_setup_folder>
 		<multimapping_read_1.fastq>
-    		(--fastqfile2) <multimapping_read_2.fastq> -- second pair if applicable
+    	(--fastqfile2) <multimapping_read_2.fastq> -- second pair if applicable
 		<unique_mapping_reads.bam>
 		(--is_bed TRUE) -- if using a custom .bed file for repeat annotation
 		(--cpus 16)
-    		(--pairedend TRUE) -- if using paired end data
+    	(--pairedend TRUE) -- if using paired end data
 
 
 ### Step 5) Processing the output of RepEnrich
