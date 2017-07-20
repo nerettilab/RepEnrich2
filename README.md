@@ -26,9 +26,9 @@ Lastly, RepEnrich2 requires a Bowtie2 indexed genome in fasta format available. 
 I have temporarily provided the setup for the human genome (build hg19) and the mouse genome (build mm9) available [here](https://drive.google.com/drive/folders/0B8_2gE04f4QWNmdpWlhaWEYwaHM?usp=sharing). After downloading you can extract the files using:
 
     gunzip hg19_repeatmasker_clean.txt.gz
-    tar -zxvf RepEnrich_setup_hg19.tar.gz
+    tar -zxvf RepEnrich2_setup_hg19.tar.gz
   
-To yield hg19_repeatmasker_clean.txt annotation file and RepEnrich_setup_hg19 setup folder.  The annotation files I am using are repeatmasker files with simple and low-complexity repeats removed (satellite repeats and transposons are still present).  If you choose to use these files for the set-up you can skip ahead to step 2.
+To yield hg19_repeatmasker_clean.txt annotation file and RepEnrich2_setup_hg19 setup folder.  The annotation files I am using are repeatmasker files with simple and low-complexity repeats removed (satellite repeats and transposons are still present).  If you choose to use these files for the set-up you can skip ahead to step 2.
 
 The RepEnrich2_setup script will build the annotation required by RepEnrich. The default is a repeatmasker file which can be
 downloaded from [repeatmasker.org](http://www.repeatmasker.org/genomicDatasets/RMGenomicDatasets.html),
