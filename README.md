@@ -163,7 +163,7 @@ An explanation of the RepEnrich2 commands:
     	(--pairedend TRUE) -- if using paired end data
 
 
-### Step 5) Processing the output of RepEnrich
+### Step 5) Processing the output of RepEnrich2
 
 The final outputs will be in the path `/data/Sample_Name`. This will include several files. The most important of which is the `sampleA_fraction_counts.txt` file. This is the estimated counts for the repeats. I use this file to build a table of counts for all my conditions (by pasting the individual `*_fraction_counts.txt` files together for my complete experiment).
 
