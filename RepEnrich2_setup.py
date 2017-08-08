@@ -83,7 +83,7 @@ if is_bed == "FALSE":
 	rep_end = {}
 	x = 0
 	for line in fin:
-	    if x>2:
+	    if x>1:
 	        line9 = line[9].replace("(","_").replace(")","_").replace("/","_")
 	        repname = line9
 		if not repname in repeat_elements:
