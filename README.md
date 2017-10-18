@@ -1,6 +1,7 @@
 #RepEnrich2
 ## Tutorial By Nicholas Skvir  
 Email: [nicholas_skvir@brown.edu](mailto:nicholas_skvir@brown.edu)  
+A continuation of RepEnrich1 by Steven Criscione
 
 ### Dependencies
 This example is for mouse genome **mm9**. Before getting started you should make sure you have installed the dependencies
