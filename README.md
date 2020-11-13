@@ -101,9 +101,9 @@ The previous commands have setup RepEnrich2 annotation that is used in downstrea
 
 After the setup of the RepEnrich2 we now have to map our data uniquely to the genome before running. This is because RepEnrich2 treats uniquely mapping and multi-mapping reads separately. This requires first mapping the data to the genome using Bowtie2, then running the RepEnrich2_subset.py script to segregate the reads into separate files. 
 
-First, perform mapping using Bowtie2 (example using paired end data):
+First, perform mapping using Bowtie2 and convert the output in bam format with samtools (example using paired end data):
 
-     bowtie2 -q -p 16 -x /path/to/annotation/mm9/mm9 -1 /home/Dataset/Sample_L001_R1.fastq -2 /home/Dataset/Sample_L001_R2.fastq -S /home/output/sample_mapped.sam
+     bowtie2 -q -p 16 -x /path/to/annotation/mm9/mm9 -1 /home/Dataset/Sample_L001_R1.fastq -2 /home/Dataset/Sample_L001_R2.fastq | samtools view -bS - > /home/output/sample_mapped.bam
 
 An explanation of the Bowtie2 options (detailed explanations found [here](http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#command-line)):
 * `bowtie2 `
@@ -115,12 +115,6 @@ An explanation of the Bowtie2 options (detailed explanations found [here](http:/
 * `-S <output_file> ` --output a Sam file with the specified filename/path
 
 The `.out` file from this run should inform you of the total mapping reads for your alignment
-
-
-
-The .sam file should then be converted to a .bam file using Samtools:
-
-    samtools view -bS sample.sam > sample.bam
 
 Lastly, the RepEnrich2_subset.py script should be run to output discrete files for uniquely and multi-mapping reads:
 
