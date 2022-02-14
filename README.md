@@ -24,7 +24,7 @@ Lastly, RepEnrich2 requires a Bowtie2 indexed genome in fasta format available. 
 
 
 ### Step 1) Attain repetitive element annotation
-I have temporarily provided the setup for the human genome (build hg19) and the mouse genome (build mm9) available [here](https://drive.google.com/drive/folders/0B8_2gE04f4QWNmdpWlhaWEYwaHM?resourcekey=0-931-qbTMFeAdreLyhrAfag&usp=sharing). After downloading you can extract the files using:
+I have temporarily provided the setup for the human genome (build hg19) and the mouse genome (build mm9) available [here](https://www.dropbox.com/sh/ovf1t2gn5lvmyla/AADEPGgGMg-vjj8Gk-s76i6Ja?dl=0). After downloading you can extract the files using:
 
     gunzip hg19_repeatmasker_clean.txt.gz
     tar -zxvf RepEnrich2_setup_hg19.tar.gz
